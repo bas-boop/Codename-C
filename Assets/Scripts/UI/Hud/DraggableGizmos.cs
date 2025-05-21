@@ -1,8 +1,7 @@
-﻿using UnityEngine;
+﻿using Framework;
+using UnityEngine;
 
-using Framework;
-
-namespace UI.Canvas
+namespace UI.Hud
 {
     public partial class Draggable
     {
