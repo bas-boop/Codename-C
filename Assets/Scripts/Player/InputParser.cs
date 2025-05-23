@@ -1,11 +1,17 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.InputSystem;
+
+using Player.Movement;
 
 namespace Player
 {
     [RequireComponent(typeof(PlayerInput))]
     public sealed class InputParser : MonoBehaviour
     {
+        [SerializeField] private Walk walk;
+        [SerializeField] private Jump jump;
+        
         private PlayerInput _playerInput;
         private InputActionAsset _inputActionAsset;
         
@@ -13,6 +19,12 @@ namespace Player
         {
             GetReferences();
             Init();
+        }
+
+        private void Update()
+        {
+            Vector2 input = _inputActionAsset["Move"].ReadValue<Vector2>();
+            walk.SetInput(input);
         }
 
         private void OnEnable() => AddListeners();
@@ -28,17 +40,17 @@ namespace Player
 
         private void AddListeners()
         {
-            _inputActionAsset["Test"].performed += TestInput;
+            _inputActionAsset["Jump"].performed += JumpAction;
         }
 
         private void RemoveListeners()
         {
-            _inputActionAsset["Test"].performed -= TestInput;
+            _inputActionAsset["Jump"].performed -= JumpAction;
         }
         
         #region Context
         
-        private void TestInput(InputAction.CallbackContext context) => Debug.Log("Test");
+        private void JumpAction(InputAction.CallbackContext context) => jump.DoJump();
 
         #endregion
     }
