@@ -4,6 +4,8 @@ using UnityEngine;
 
 namespace Swzwij.FolderArchitecture
 {
+    #if UNITY_EDITOR
+    
     /// <summary>
     /// Provides a custom editor window for creating folder structures within a Unity project.
     /// </summary>
@@ -58,4 +60,6 @@ namespace Swzwij.FolderArchitecture
             }
         }
     }
+    
+    #endif
 }
