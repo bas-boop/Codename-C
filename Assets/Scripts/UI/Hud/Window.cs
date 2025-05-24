@@ -24,5 +24,7 @@ namespace UI.Hud
             if (!target)
                 _lastPlace = p_rectTransform.position;
         }
+        
+        public void ToggleActive() => SetActive(!gameObject.activeInHierarchy);
     }
 }
