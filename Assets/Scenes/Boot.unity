@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 966098749}
   - component: {fileID: 966098748}
   - component: {fileID: 966098747}
+  - component: {fileID: 966098750}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -258,6 +259,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &966098750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966098746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &1050419341
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4732c3a07c3e4c6b87f19d9f34b1d7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pins: ab000000560100001a02000093020000aa020000b3020000b40200009503000059050000df050000e0050000f406000027070000970700000509000027090000e50b00000f0c0000720c0000de0c00005b0d0000930d0000bf0e0000b10f0000171000001f100000311000007410000078100000401200007c130000e21300001c1400002c14000047140000591400003b150000dd15000018160000a7160000071700001a170000451700006d17000081190000211a0000f31b0000721c0000e01c00002c1e00002b1f0000321f0000ce1f000081200000e5200000fc200000b9210000ce210000e32100000d220000dc22000002230000092300009c2300009f2300008d240000592500009e250000f9250000
 --- !u!4 &1050419343
 Transform:
   m_ObjectHideFlags: 0
