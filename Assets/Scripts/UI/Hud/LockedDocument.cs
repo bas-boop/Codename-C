@@ -13,7 +13,7 @@ public sealed class LockedDocument : MonoBehaviour
 
     private void Awake()
     {
-        if (GameplayData.Instance)
+        if (GameplayData.Exist)
             _pinToCheck = GameplayData.Instance.GetRandomPin();
         
         SetState(false);

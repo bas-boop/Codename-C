@@ -4,6 +4,8 @@ namespace Framework
 {
     public abstract class Singleton<T> : MonoBehaviour where T : Component
     {
+        public static bool Exist { get; private set; }
+
         protected static bool CanDestroyOnLoad;
         private static T _instance;
 
@@ -28,6 +30,8 @@ namespace Framework
                 if(!CanDestroyOnLoad)
                     DontDestroyOnLoad(singletonObject);
 
+                Exist = true;
+                
                 return _instance;
             }
         }
