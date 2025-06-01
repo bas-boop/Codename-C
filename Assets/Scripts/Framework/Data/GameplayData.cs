@@ -1,11 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using Random = UnityEngine.Random;
+
+using UI.Hud;
 
 namespace Framework.Data
 {
     public sealed class GameplayData : Singleton<GameplayData>
     {
         [SerializeField] private int[] pins;
+        [SerializeField] private List<DocumentData> savedWindows;
 
         public string GetRandomPin()
         {
@@ -23,5 +28,13 @@ namespace Framework.Data
             int r = Random.Range(0, pins.Length);
             return pins[r].ToString("D4");
         }
+
+        public void SaveWindow(DocumentData data)
+        {
+            if (!savedWindows.Contains(data)) 
+                savedWindows.Add(data);
+        }
+
+        public List<DocumentData> GetSavedWindows() => savedWindows;
     }
 }

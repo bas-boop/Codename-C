@@ -25,7 +25,7 @@ public sealed class TaskBar : MonoBehaviour
         _tasks.Add(newTaskButton);
         _windows.Add(target);
 
-        newTaskButton.GetComponentInChildren<TMP_Text>().text = target.gameObject.name; // temp until art
+        newTaskButton.GetComponentInChildren<TMP_Text>().text = target.GetWindowName(); // temp until art
     }
 
     private void InitTaskBar()

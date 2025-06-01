@@ -1,0 +1,29 @@
+﻿using System.Collections.Generic;
+using UnityEngine;
+
+using UI.Hud;
+
+namespace Framework.Data
+{
+    public sealed class DataSpawner : MonoBehaviour
+    {
+        [SerializeField] private Transform windowParent;
+        [SerializeField] private GameObject lockedDocumentWindow;
+        [SerializeField] private TaskBar taskBar;
+        
+        private void Start()
+        {
+            List<DocumentData> datas = GameplayData.Instance.GetSavedWindows();
+
+            foreach (DocumentData data in datas)
+            {
+                GameObject w = Instantiate(lockedDocumentWindow, windowParent);
+                
+                w.GetComponent<LockedDocument>().SetData(data);
+                
+                taskBar.AddTask(w.GetComponent<Window>());
+            }
+            
+        }
+    }
+}

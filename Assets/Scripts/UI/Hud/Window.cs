@@ -4,6 +4,8 @@ namespace UI.Hud
 {
     public sealed class Window : Hud.Draggable
     {
+        [SerializeField] private string windowName = "New window";
+        
         private static readonly Vector2 CENTER_SCREEN_OFFSET = new (960, 540);
 
         private bool _hasBeenActive;
@@ -26,5 +28,7 @@ namespace UI.Hud
         }
         
         public void ToggleActive() => SetActive(!gameObject.activeInHierarchy);
+
+        public string GetWindowName() => windowName;
     }
 }

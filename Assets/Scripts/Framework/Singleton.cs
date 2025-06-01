@@ -29,8 +29,6 @@ namespace Framework
                 
                 if(!CanDestroyOnLoad)
                     DontDestroyOnLoad(singletonObject);
-
-                Exist = true;
                 
                 return _instance;
             }
@@ -47,6 +45,7 @@ namespace Framework
                 return;
             }
             
+            Exist = true;
             _instance = this as T;
             DontDestroyOnLoad(this.gameObject);
         }
