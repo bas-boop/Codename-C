@@ -13,7 +13,13 @@ namespace Framework.Data
         
         private void Start()
         {
-            List<DocumentData> datas = GameplayData.Instance.GetSavedWindows();
+            if (!GameplayData.Exist)
+                return;
+            
+            List<DocumentData> datas = GameplayData.Instance?.GetSavedWindows();
+            
+            if (datas.Count == 0)
+                return;
 
             foreach (DocumentData data in datas)
             {

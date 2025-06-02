@@ -8,6 +8,7 @@ namespace UI.Hud
         public string name;
         public int pin;
         public string text;
+        public bool isCorrupted;
 
         public bool Null()
         {

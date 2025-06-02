@@ -2,7 +2,7 @@
 
 namespace UI.Hud
 {
-    public sealed class Window : Hud.Draggable
+    public sealed class Window : Draggable
     {
         [SerializeField] private string windowName = "New window";
         
