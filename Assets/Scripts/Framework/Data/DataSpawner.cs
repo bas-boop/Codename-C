@@ -9,6 +9,7 @@ namespace Framework.Data
     {
         [SerializeField] private Transform windowParent;
         [SerializeField] private GameObject lockedDocumentWindow;
+        [SerializeField] private DocumentExposer documentExposer;
         [SerializeField] private TaskBar taskBar;
         
         private void Start()
@@ -25,7 +26,7 @@ namespace Framework.Data
             {
                 GameObject w = Instantiate(lockedDocumentWindow, windowParent);
                 
-                w.GetComponent<LockedDocument>().SetData(data);
+                w.GetComponent<LockedDocument>().SetData(data, () => documentExposer.AddUpload(data));
                 
                 taskBar.AddTask(w.GetComponent<Window>());
             }

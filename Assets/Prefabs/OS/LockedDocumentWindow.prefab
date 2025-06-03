@@ -610,7 +610,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lockedGameObject: {fileID: 7834508660935257179}
   unlockedGameObject: {fileID: 2031077100613989178}
-  saveButton: {fileID: 934214049928679164}
+  saveButton: {fileID: 2235553011388397417}
   text: {fileID: 1809297561272180740}
   window: {fileID: 831334357948654957}
   pin: 1111
@@ -618,6 +618,7 @@ MonoBehaviour:
     name: 
     pin: 0
     text: 
+    isCorrupted: 0
 --- !u!114 &5318253951785770899
 MonoBehaviour:
   m_ObjectHideFlags: 0

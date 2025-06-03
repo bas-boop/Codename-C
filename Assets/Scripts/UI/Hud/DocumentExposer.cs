@@ -9,6 +9,7 @@ namespace UI.Hud
     public sealed class DocumentExposer : MonoBehaviour
     {
         [SerializeField] private SceneSwitcher sceneSwitcher;
+        [SerializeField] private ExposedDocumentsUI exposedDocumentsUI;
         [SerializeField] private int amountCanUpload = 5;
         [SerializeField] private int amountToBeCorrupted = 3;
         [SerializeField] private List<DocumentData> uploads;
@@ -25,6 +26,8 @@ namespace UI.Hud
 
             if (uploads.Count > amountCanUpload)
                 uploads.RemoveAt(0);
+            
+            exposedDocumentsUI.UpdateText(uploads.ToArray());
         }
 
         public void Upload()

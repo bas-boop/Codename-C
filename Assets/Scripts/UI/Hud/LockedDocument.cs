@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.Events;
 using TMPro;
 
 using Framework.Data;
@@ -8,7 +10,7 @@ public sealed class LockedDocument : MonoBehaviour
 {
     [SerializeField] private GameObject lockedGameObject;
     [SerializeField] private GameObject unlockedGameObject;
-    [SerializeField] private GameObject saveButton;
+    [SerializeField] private Button saveButton;
     [SerializeField] private TMP_Text text;
     [SerializeField] private Window window;
     
@@ -47,7 +49,7 @@ public sealed class LockedDocument : MonoBehaviour
 
     public string GetPin() => _pinToCheck ?? pin.ToString();
 
-    public void SetData(DocumentData data)
+    public void SetData(DocumentData data, UnityAction action)
     {
         documentData = data;
         
@@ -55,7 +57,8 @@ public sealed class LockedDocument : MonoBehaviour
         pin = documentData.pin;
         text.text = documentData.text;
         
-        saveButton.SetActive(false);
+        saveButton.onClick.RemoveAllListeners();
+        saveButton.onClick.AddListener(action);
     }
 
     public DocumentData GetData() => documentData;
