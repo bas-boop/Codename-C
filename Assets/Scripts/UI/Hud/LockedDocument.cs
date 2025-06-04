@@ -28,10 +28,11 @@ public sealed class LockedDocument : MonoBehaviour
 
             documentData.name = window.GetWindowName();
             documentData.pin = int.Parse(_pinToCheck);
-            documentData.text = text.text;   
+            documentData.text = text.text;
         }
         
         SetState(false);
+        gameObject.SetActive(false);
     }
 
     public void Check(string guess)
@@ -52,10 +53,12 @@ public sealed class LockedDocument : MonoBehaviour
     public void SetData(DocumentData data, UnityAction action)
     {
         documentData = data;
-        
-        // name
+
+        window.SetWindowName(documentData.name);
         pin = documentData.pin;
         text.text = documentData.text;
+        
+        SetState(true);
         
         saveButton.onClick.RemoveAllListeners();
         saveButton.onClick.AddListener(action);

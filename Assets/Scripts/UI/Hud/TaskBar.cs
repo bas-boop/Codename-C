@@ -15,10 +15,10 @@ namespace UI.Hud
 
         private void Start() => InitTaskBar();
 
-        public void AddTask(Window target)
+        public bool AddTask(Window target)
         {
             if (_windows.Contains(target))
-                return;
+                return false;
 
             Button newTaskButton = Instantiate(buttonPrefab, transform);
             newTaskButton.onClick.AddListener(target.ToggleActive);
@@ -26,7 +26,11 @@ namespace UI.Hud
             _windows.Add(target);
 
             newTaskButton.GetComponentInChildren<TMP_Text>().text = target.GetWindowName(); // temp until art
+            
+            return true;
         }
+
+        public void AddTaskAndSetActive(Window target) => target.SetActive(AddTask(target));
 
         private void InitTaskBar()
         {
