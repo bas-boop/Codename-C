@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &235760313
 RectTransform:
   m_ObjectHideFlags: 0
@@ -247,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1225287273120848342, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1160
+      value: 1500
       objectReference: {fileID: 0}
     - target: {fileID: 1225287273120848342, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
       propertyPath: m_SizeDelta.y
@@ -287,7 +287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1225287273120848342, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 70
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 1225287273120848342, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -315,6 +315,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1225287273120848342, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
   m_PrefabInstance: {fileID: 485080591}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &485080593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5558857266911801285, guid: 914295ad5fd77ca46b4420b4bdc54c80, type: 3}
+  m_PrefabInstance: {fileID: 485080591}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ed4c76eed9e1ae4383f12560d2a89ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547039966
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,8 +467,8 @@ MonoBehaviour:
 
     Upload the corruption.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
+  m_sharedMaterial: {fileID: 2038297147540943011, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -545,7 +556,7 @@ GameObject:
   - component: {fileID: 681396059}
   - component: {fileID: 681396058}
   m_Layer: 5
-  m_Name: TimerText
+  m_Name: UploadText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -592,8 +603,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Upload the files!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
+  m_sharedMaterial: {fileID: 2038297147540943011, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -709,6 +720,7 @@ MonoBehaviour:
     pin: 0
     text: 
     isCorrupted: 0
+    icon: {fileID: 0}
 --- !u!4 &1084389750
 Transform:
   m_ObjectHideFlags: 0
@@ -806,8 +818,8 @@ MonoBehaviour:
 
     5 - Window name'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
+  m_sharedMaterial: {fileID: 2038297147540943011, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1022,7 +1034,7 @@ MonoBehaviour:
   windowParent: {fileID: 1164772748}
   lockedDocumentWindow: {fileID: 2248798680525929775, guid: 9da19354ad6901342844758cd5f7912e, type: 3}
   documentExposer: {fileID: 1084389749}
-  taskBar: {fileID: 0}
+  taskBar: {fileID: 485080593}
 --- !u!1 &1541877490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1069,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1541877492
@@ -1082,8 +1094,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Expose the truth
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
+  m_sharedMaterial: {fileID: 2038297147540943011, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1274,8 +1286,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 5735307017529033047, guid: f09419b6f49706d48b60edb89dff65a1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4

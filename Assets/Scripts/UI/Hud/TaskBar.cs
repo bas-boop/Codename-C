@@ -25,7 +25,8 @@ namespace UI.Hud
             _tasks.Add(newTaskButton);
             _windows.Add(target);
 
-            newTaskButton.GetComponentInChildren<TMP_Text>().text = target.GetWindowName(); // temp until art
+            newTaskButton.image.sprite = target.GetWindowIcon();
+            newTaskButton.GetComponentInChildren<TMP_Text>().text = target.GetWindowName();
             
             return true;
         }

@@ -30,6 +30,9 @@ public sealed class LockedDocument : MonoBehaviour
             documentData.pin = int.Parse(_pinToCheck);
             documentData.text = text.text;
         }
+
+        if (window)
+            documentData.icon = window.GetWindowIcon();
         
         SetState(false);
         gameObject.SetActive(false);

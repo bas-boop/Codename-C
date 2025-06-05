@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSingleton: 0
   loadSceneInAwake: 1
-  sceneToLoad: Platformer
+  sceneToLoad: DraggableUI
 --- !u!4 &940908390
 Transform:
   m_ObjectHideFlags: 0

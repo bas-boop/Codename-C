@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace UI.Hud
 {
@@ -9,6 +10,7 @@ namespace UI.Hud
         public int pin;
         public string text;
         public bool isCorrupted;
+        public Sprite icon;
 
         public bool Null()
         {
