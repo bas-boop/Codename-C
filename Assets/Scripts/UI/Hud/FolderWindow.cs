@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,9 +15,12 @@ namespace UI.Hud
         {
             base.Awake();
 
+            if (windowsToOpen.Count == 0)
+                return;
+            
             if (taskBar == null)
                 taskBar = FindAnyObjectByType<TaskBar>();
-
+            
             foreach (Window window in windowsToOpen)
             {
                 Button newTaskButton = Instantiate(buttonPrefab, gridTransform);

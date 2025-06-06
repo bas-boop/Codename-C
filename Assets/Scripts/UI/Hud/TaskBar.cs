@@ -31,7 +31,11 @@ namespace UI.Hud
             return true;
         }
 
-        public void AddTaskAndSetActive(Window target) => target.SetActive(AddTask(target));
+        public void AddTaskAndSetActive(Window target)
+        {
+            AddTask(target);
+            target.SetActive(true);
+        }
 
         private void InitTaskBar()
         {

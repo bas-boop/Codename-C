@@ -2686,6 +2686,10 @@ PrefabInstance:
       propertyPath: isGlitched
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 705795474980647277, guid: 8c06fab67c6682f428f82191e460af0f, type: 3}
+      propertyPath: onEnterGlitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day1
+      objectReference: {fileID: 0}
     - target: {fileID: 1831910923832879567, guid: 8c06fab67c6682f428f82191e460af0f, type: 3}
       propertyPath: m_Name
       value: GlitchedDoor
@@ -3049,6 +3053,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1360520323}
     m_Modifications:
+    - target: {fileID: 705795474980647277, guid: 8c06fab67c6682f428f82191e460af0f, type: 3}
+      propertyPath: onEnterGlitch.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Day1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288078447481300335, guid: 8c06fab67c6682f428f82191e460af0f, type: 3}
+      propertyPath: sceneToLoad
+      value: Platformer1
+      objectReference: {fileID: 0}
     - target: {fileID: 1831910923832879567, guid: 8c06fab67c6682f428f82191e460af0f, type: 3}
       propertyPath: m_Name
       value: Door

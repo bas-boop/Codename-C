@@ -484,7 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneSwitcher: {fileID: 1084389751}
   exposedDocumentsUI: {fileID: 1122537732}
-  amountCanUpload: 5
+  amountCanUpload: 4
   amountToBeCorrupted: 3
   uploads: []
   test:
