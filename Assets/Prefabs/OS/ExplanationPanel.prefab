@@ -232,4 +232,4 @@ MonoBehaviour:
   panel: {fileID: 8030200085370686102}
   showTime: 5
   textFadeTime: 2
-  panelFadeTime: 2
+  panelFadeTime: 1

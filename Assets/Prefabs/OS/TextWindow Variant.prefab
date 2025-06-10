@@ -20,11 +20,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3072717154146882501, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
       propertyPath: m_Name
-      value: CreditsTextWindow Variant
+      value: TextWindow Variant
       objectReference: {fileID: 0}
     - target: {fileID: 3072717154146882501, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3350373461211533253, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
       propertyPath: windowName

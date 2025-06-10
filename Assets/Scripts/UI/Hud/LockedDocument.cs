@@ -65,6 +65,7 @@ public sealed class LockedDocument : MonoBehaviour
         
         saveButton.onClick.RemoveAllListeners();
         saveButton.onClick.AddListener(action);
+        saveButton.GetComponentInChildren<TMP_Text>().text = "Upload";
     }
 
     public DocumentData GetData() => documentData;

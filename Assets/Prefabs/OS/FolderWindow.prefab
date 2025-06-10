@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9852582c29f5473eb36e82ab2ec0af1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 4, y: 3}
+  size: {x: 3, y: 2.2}
   p_rectTransform: {fileID: 8260567582432462456}
   onDrag:
     m_PersistentCalls:
@@ -211,6 +211,7 @@ MonoBehaviour:
   buttonPrefab: {fileID: 3952535829593412183, guid: 9c3910575e1bc8d4fa7d47ab10b39793, type: 3}
   gridTransform: {fileID: 3461512915464259129}
   windowsToOpen: []
+  taskBar: {fileID: 0}
 --- !u!1 &7874910091780250219
 GameObject:
   m_ObjectHideFlags: 0

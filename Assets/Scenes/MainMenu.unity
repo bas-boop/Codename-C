@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 737631de0439475c93053c72f5d2a197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 4, y: 4}
+  size: {x: 3, y: 3}
   p_rectTransform: {fileID: 171695114}
   onDrag:
     m_PersistentCalls:
@@ -770,7 +770,7 @@ GameObject:
   - component: {fileID: 657794208}
   - component: {fileID: 657794207}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: VersionText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Version 0.5
+  m_text: Version 0.6
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
   m_sharedMaterial: {fileID: 2038297147540943011, guid: 3dda4829e3c62b6489326e20e0e8a581, type: 2}
@@ -1646,6 +1646,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3350373461211533253, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
+      propertyPath: size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350373461211533253, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
+      propertyPath: size.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350373461211533253, guid: 7fdbac326744cc84089437fc66b58b40, type: 3}
       propertyPath: windowName
       value: Controls
       objectReference: {fileID: 0}
@@ -2303,6 +2311,14 @@ PrefabInstance:
       propertyPath: icon
       value: 
       objectReference: {fileID: -3056181920306362907, guid: f09419b6f49706d48b60edb89dff65a1, type: 3}
+    - target: {fileID: 5905127946994447245, guid: 43464b90ae3424142b19ca6794d42a1a, type: 3}
+      propertyPath: size.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905127946994447245, guid: 43464b90ae3424142b19ca6794d42a1a, type: 3}
+      propertyPath: size.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5905127946994447245, guid: 43464b90ae3424142b19ca6794d42a1a, type: 3}
       propertyPath: windowsToOpen.Array.size
       value: 4
@@ -3126,6 +3142,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: CreditsTextWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 677228809557016397, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 989825524895982413, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
+      propertyPath: size.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 989825524895982413, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
+      propertyPath: size.y
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6340365347944542356, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3482,7 +3510,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isSingleton: 0
   loadSceneInAwake: 0
-  sceneToLoad: Platformer1
+  sceneToLoad: Platformer1.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

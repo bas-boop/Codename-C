@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextWindow Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 677228809557016397, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 764325242405786641, guid: a65e6d24d8a4ef44783f854e62fc5777, type: 3}
       propertyPath: m_text
       value: 'Email:
