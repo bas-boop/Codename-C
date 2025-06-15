@@ -10,6 +10,7 @@ namespace Framework.Data
     {
         [SerializeField] private int[] pins;
         [SerializeField] private List<DocumentData> savedWindows;
+        [SerializeField] private AudioClip[] buttonClicks;
 
         public string GetRandomPin()
         {
@@ -34,6 +35,10 @@ namespace Framework.Data
                 savedWindows.Add(data);
         }
 
+        public void DeleteSavedWindows() => savedWindows = new();
+
         public List<DocumentData> GetSavedWindows() => savedWindows;
+
+        public AudioClip[] GetClips() => buttonClicks;
     }
 }

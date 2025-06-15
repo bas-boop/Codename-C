@@ -210,13 +210,13 @@ GameObject:
   m_Component:
   - component: {fileID: 8428277445991892446}
   - component: {fileID: 3859807154622515913}
-  - component: {fileID: 9150618791778650939}
   - component: {fileID: 3281227775057120060}
-  - component: {fileID: 5024303462194446398}
+  - component: {fileID: 2744861624635052951}
   - component: {fileID: 7253434710438535922}
   - component: {fileID: 6905561769958628451}
   - component: {fileID: 2297821999443430163}
   - component: {fileID: 6131799581540441151}
+  - component: {fileID: 9150618791778650939}
   - component: {fileID: 5778767942594811906}
   - component: {fileID: 3374252093818703288}
   m_Layer: 0
@@ -298,38 +298,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9150618791778650939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7070223693167235721}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126c9f336eb541fdb51cafd5c4b298da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  is3D: 0
-  lineOrSphere: 0
-  offSetOrTransform: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  rayCastLength: 1
-  sphereCastRadius: 0.5
-  offSet2D: {x: 0, y: -0.49}
-  offSet3D: {x: 0, y: 0, z: 0}
-  groundCheckerTransform: {fileID: 6550586314110766669}
-  isGrounded: 1
-  gizmos: 1
-  gizmosColor: {r: 0, g: 1, b: 1, a: 1}
-  onGroundEnter:
-    m_PersistentCalls:
-      m_Calls: []
-  onGroundLeave:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!50 &3281227775057120060
 Rigidbody2D:
   serializedVersion: 5
@@ -357,8 +325,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &5024303462194446398
-BoxCollider2D:
+--- !u!58 &2744861624635052951
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -392,17 +360,7 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 0.9}
-  m_EdgeRadius: 0
+  m_Radius: 0.49
 --- !u!114 &7253434710438535922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +437,38 @@ MonoBehaviour:
   rioRigidbody2D: {fileID: 3281227775057120060}
   groundChecker: {fileID: 9150618791778650939}
   jumpStrength: 7.5
+--- !u!114 &9150618791778650939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7070223693167235721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126c9f336eb541fdb51cafd5c4b298da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  is3D: 0
+  lineOrSphere: 0
+  offSetOrTransform: 0
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  rayCastLength: 1
+  sphereCastRadius: 0.45
+  offSet2D: {x: 0, y: -0.11}
+  offSet3D: {x: 0, y: 0, z: 0}
+  groundCheckerTransform: {fileID: 6550586314110766669}
+  isGrounded: 1
+  gizmos: 1
+  gizmosColor: {r: 0, g: 1, b: 1, a: 1}
+  onGroundEnter:
+    m_PersistentCalls:
+      m_Calls: []
+  onGroundLeave:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5778767942594811906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -497,7 +487,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  rayCastLength: 1
+  rayCastLength: 0.75
   sphereCastRadius: 0.1
   offSet2D: {x: -0.52, y: 0.5}
   offSet3D: {x: 0, y: 0, z: 0}
@@ -529,7 +519,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  rayCastLength: 1
+  rayCastLength: 0.75
   sphereCastRadius: 0.1
   offSet2D: {x: 0.52, y: 0.5}
   offSet3D: {x: 0, y: 0, z: 0}

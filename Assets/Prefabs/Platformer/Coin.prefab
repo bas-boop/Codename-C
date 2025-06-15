@@ -103,19 +103,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
+  audio: {fileID: 8300000, guid: 9ba0bd5d015217448ab8e49858597612, type: 3}
   onCollect:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Framework.DebugSystem.Messenger, Assembly-CSharp
-        m_MethodName: DebugLog
-        m_Mode: 5
+        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Coin collected
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!58 &6511597518919476288

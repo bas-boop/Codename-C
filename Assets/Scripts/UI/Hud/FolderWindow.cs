@@ -6,7 +6,7 @@ namespace UI.Hud
 {
     public sealed class FolderWindow : Window
     {
-        [SerializeField] private Button buttonPrefab;
+        [SerializeField] private SoundButton buttonPrefab;
         [SerializeField] private Transform gridTransform;
         [SerializeField] private List<Window> windowsToOpen;
         [SerializeField] private TaskBar taskBar;
@@ -23,7 +23,7 @@ namespace UI.Hud
             
             foreach (Window window in windowsToOpen)
             {
-                Button newTaskButton = Instantiate(buttonPrefab, gridTransform);
+                SoundButton newTaskButton = Instantiate(buttonPrefab, gridTransform);
                 newTaskButton.image.sprite = window.GetWindowIcon();
                 newTaskButton.onClick.AddListener(() => taskBar.AddTaskAndSetActive(window));
             }
